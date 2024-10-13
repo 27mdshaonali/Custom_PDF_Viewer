@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2F039BE5"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/tech"
+        android:scaleType="fitXY"
+        android:id="@+id/image_1"
+        />
+
+
+<!--    You acn add Image anywhere in your layout using Library -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/scroll_view">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/demoTxT1"
+                android:textColor="#292828"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/second_background"
+                android:scaleType="fitXY"
+                android:id="@+id/image_2"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/load_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/load_second_image"
+                android:textSize="22sp"
+                android:layout_marginBottom="50dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171111653169",
+    "project_id": "data-store-using-firebase",
+    "storage_bucket": "data-store-using-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171111653169:android:276cb956f77e5ac26d1a10",
+        "android_client_info": {
+          "package_name": "com.example.datastoreusingfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqI-pkLzkCewRnC9BtC2aYjmhrwDInqUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

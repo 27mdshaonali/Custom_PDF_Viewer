@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#39039BE5"
+    tools:context=".MainActivity">
+
+<!--    =================== Cover Image and Text has started here ====================-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/coverImage"
+        tools:ignore="HardcodedText,UselessParent">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tech"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Bismillah Hirrahmanir Rahim"
+            android:ellipsize="marquee"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:elevation="10dp"
+
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:id="@+id/bismillah"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_below="@id/bismillah"
+            android:layout_marginTop="00dp"
+            android:id="@+id/textContainer">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/text">
+
+                <TextView
+                    android:id="@+id/subahan_allah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subahan Allah"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/subahan_allah_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/text2">
+
+                <TextView
+                    android:id="@+id/alhamdulillah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alhamdulillah"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/alhamdulillah_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/text3">
+
+                <TextView
+                    android:id="@+id/laa_ilaha_illallah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laa Ilaha Illallah"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/laa_ilaha_illallah_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <!--       ============================== Cover Image and Text has ended here ========================-->
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:layout_below="@id/coverImage"
+        tools:ignore="HardcodedText,UselessLeaf">
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

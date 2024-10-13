@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Md. Shaon Ali! I am looking that you are not focusing on your main poit. This is very bad. Yoy should focus on your won goal or dream."
+        android:textSize="20sp"
+        android:id="@+id/text"
+        android:padding="12dp"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/speak"
+        android:text="Speak"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

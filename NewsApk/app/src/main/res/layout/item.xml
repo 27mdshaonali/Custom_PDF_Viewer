@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/itemLayout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="#A4065BEA"
+        tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute,UselessParent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/tech"
+            android:padding="10dp"
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left|center"
+            android:layout_marginStart="4dp"
+            tools:ignore="RtlHardcoded">
+
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00B0FF"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="TECH"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:text="বাজারে এল রিয়েলমি’র ৪৫ ওয়াট চার্জিং ক্যাপ্টেন ‘সি৬৩’"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="আইসিসি মেন’স টি-২০ বিশ্বকাপের এই রোমা কর সময়ে তরুণদের প্রিয় স্মার্টফোন ব্র্যান্ড রিয়েলমি দেশের স্মার্টফোন মার্কেটে কাঙ্খিত ‘রিয়েলমি সি৬৩’ মোবাইল ডিভাইসটি নিয়ে এসেছে;"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Text Watcher</string>
+
+
+    <string name="enter_your_name">Enter Barcode:</string>
+    <string name="enter_your_name2">Product Name: </string>
+    <string name="enter_your_name3">Price: </string>
+    <string name="enter_your_name4">1990 TK </string>
+    <string name="enter_your_name5">1490 TK </string>
+    <string name="hint_enter_your_name">Enter Barcode</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+</resources>

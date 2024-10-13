@@ -1,0 +1,418 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical|center|center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/deer_logo" />
+
+                <TextView
+                    android:id="@+id/DATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:text="Deer Lifestyle"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:text="Address: Mohammadpur Bus Stand, Bosila Road, Dhaka-1207"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="E-mail: "
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="27mdshaonali@gmail.com"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Phone: "
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="01796470921 / 01815164700"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal|left"
+                android:text="Find Subscription "
+                android:textColor="#ff000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal|left"
+                android:text="Phone or Membership Number :"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edTextPhnOrCrdNmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg"
+                android:gravity="center_horizontal|left"
+                android:hint="+880 123456789 or DEER20210001"
+                android:inputType="phone"
+                android:padding="10dp"
+				tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <Button
+                    android:id="@+id/clearBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center|center_horizontal"
+                    android:text="Clear"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/findBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center|center_horizontal"
+                    android:text="Find"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/membershipResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="#ff000000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addToMembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:text="Add to Membership"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/membershipForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal|left"
+                android:text="Add Member "
+                android:textColor="#ff000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal|left"
+                android:text="Phone Number: "
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addPhoneNmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="12"
+                android:gravity="center_horizontal|left"
+                android:hint="Edit phone number "
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal|left"
+                android:text="Card Number: : "
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addCardNmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="12"
+                android:gravity="center_horizontal|left"
+                android:hint="Enter Card number "
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal|left"
+                android:text="Name : "
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="12"
+                android:gravity="center_horizontal|left"
+                android:hint="Enter Customer Name: "
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal|left"
+            android:text="Bar/QR Code : "
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+			
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+			
+
+            <EditText
+                android:id="@+id/barOrQrCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/bg"
+                android:gravity="start"
+                android:hint="Enter Bar Code or QR Code"
+                android:inputType="textPhonetic"
+                android:padding="10dp" />
+
+            <ImageView
+                android:id="@+id/scanner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="4"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/scanner" />
+        </LinearLayout>
+		
+		
+		
+		
+		<LinearLayout
+			android:id="@+id/membershipDetails"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:orientation="vertical"
+			>
+			
+			
+			
+			<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="12dp"
+			android:gravity="center_horizontal|left"
+			android:text="Phone Number: "
+			android:textColor="#ff000000"
+			android:textSize="20sp" />
+			
+			<EditText
+			android:id="@+id/havePhoneNmbr"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bg"
+			android:ems="12"
+			android:gravity="center_horizontal|left"
+			android:hint="Edit phone number "
+			android:inputType="phone"
+			android:padding="10dp" />
+			
+			<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="12dp"
+			android:gravity="center_horizontal|left"
+			android:text="Card Number: "
+			android:textColor="#ff000000"
+			android:textSize="20sp" />
+			
+			<EditText
+			android:id="@+id/haveCardNmbr"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bg"
+			android:ems="12"
+			android:gravity="center_horizontal|left"
+			android:hint="Enter Card number "
+			android:inputType="number"
+			android:padding="10dp"
+				tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+			
+			<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="12dp"
+			android:gravity="center_horizontal|left"
+			android:text="Name : "
+			android:textColor="#ff000000"
+			android:textSize="20sp" />
+			
+			<EditText
+			android:id="@+id/haveCustomerName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bg"
+			android:ems="12"
+			android:gravity="center_horizontal|left"
+			android:hint="Enter Customer Name: "
+			android:inputType="textPersonName"
+			android:padding="10dp" />
+			</LinearLayout>
+		
+		
+		
+    </LinearLayout>
+</ScrollView>
